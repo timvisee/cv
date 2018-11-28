@@ -1,0 +1,9 @@
+# LaTeX output
+*.aux
+*.log
+*.out
+*.xml
+*.bcf
+
+# Vim swap files
+.*.sw[pom]
