@@ -16,8 +16,12 @@ make
 xdg-open cv.pdf
 ```
 
+## License
+This project is released under the GNU GPL-v3.0 licence.
+Check out the [LICENSE](LICENSE) file for more information.
+
 ## Resources
 The curriculum vitae template I used is based on [CV][ref-cv] by Adrien Friggeri.
 
-[rev-cv]: https://github.com/afriggeri/CV
+[ref-cv]: https://github.com/afriggeri/CV
 [pdf]: cv.pdf
