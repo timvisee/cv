@@ -28,6 +28,6 @@ The curriculum vitae template I used is based on [CV][ref-cv] by Adrien Friggeri
 
 [badge-pdf]: https://img.shields.io/badge/cv-pdf-blue.svg
 [badge-pipeline]: https://gitlab.com/timvisee/cv/badges/master/pipeline.svg
-[pipeline]: https://gitlab.com/timvisee/cv/commits/master
+[pipeline]: https://gitlab.com/timvisee/cv/pipelines
 [ref-cv]: https://www.latextemplates.com/template/friggeri-resume-cv
 [pdf]: https://timvisee.gitlab.io/cv/cv.pdf
