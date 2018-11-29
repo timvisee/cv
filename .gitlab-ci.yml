@@ -4,7 +4,15 @@ image: blang/latex:latest
 pages:
   stage: deploy
   script:
+    # Upgrade system, install Ubuntu font
+    - apt-get update -yqq
+    - apt-get upgrade -yqq
+    - apt-get install ttf-ubuntu-font-family -yqq
+
+    # Compile LaTeX document
     - make
+
+    # Release
     - mkdir public
     - cp ./cv.pdf ./public/
   artifacts:

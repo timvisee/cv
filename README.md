@@ -1,7 +1,10 @@
+[![View CV as PDF][badge-pdf]][pdf]
+[[![Pipeline status][]](https://gitlab.com/timvisee/cv/commits/master)][pipeline]
+
 # Curriculum Vitae [WIP]
 My personal curriculum vitae.
 
-[→ Pre-compiled PDF][pdf]
+[→ PDF][pdf]
 
 ## Compile
 ```bash
@@ -23,5 +26,8 @@ Check out the [LICENSE](LICENSE) file for more information.
 ## Resources
 The curriculum vitae template I used is based on [CV][ref-cv] by Adrien Friggeri.
 
+[badge-pdf]: https://img.shields.io/badge/cv-pdf-blue.svg
+[badge-pipeline]: https://gitlab.com/timvisee/cv/badges/master/pipeline.svg
+[pipeline]: https://gitlab.com/timvisee/cv/commits/master
 [ref-cv]: https://www.latextemplates.com/template/friggeri-resume-cv
-[pdf]: cv.pdf
+[pdf]: https://timvisee.gitlab.io/cv/cv.pdf
