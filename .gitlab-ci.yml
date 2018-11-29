@@ -1,0 +1,14 @@
+image: blang/latex:latest
+
+# Compile LaTeX document, and release to GitLab pages
+pages:
+  stage: deploy
+  script:
+    - make
+    - mkdir public
+    - cp ./cv.pdf ./public/
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
