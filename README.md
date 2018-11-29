@@ -23,5 +23,5 @@ Check out the [LICENSE](LICENSE) file for more information.
 ## Resources
 The curriculum vitae template I used is based on [CV][ref-cv] by Adrien Friggeri.
 
-[ref-cv]: https://github.com/afriggeri/CV
+[ref-cv]: https://www.latextemplates.com/template/friggeri-resume-cv
 [pdf]: cv.pdf
