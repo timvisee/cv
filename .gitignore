@@ -4,6 +4,7 @@
 *.out
 *.xml
 *.bcf
+*.pdf
 
 # Vim swap files
 .*.sw[pom]
