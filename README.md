@@ -1,5 +1,5 @@
 [![View CV as PDF][badge-pdf]][pdf]
-[[![Pipeline status][]](https://gitlab.com/timvisee/cv/commits/master)][pipeline]
+[![Pipeline status][badge-pipeline]][pipeline]
 
 # Curriculum Vitae [WIP]
 My personal curriculum vitae.

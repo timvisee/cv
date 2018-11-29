@@ -6,7 +6,6 @@ pages:
   script:
     # Upgrade system, install Ubuntu font
     - apt-get update -yqq
-    - apt-get upgrade -yqq
     - apt-get install ttf-ubuntu-font-family -yqq
 
     # Compile LaTeX document
