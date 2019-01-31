@@ -105,7 +105,7 @@
         orange\or%
         green\or%
         purple\or%
-        brown\else%
+        brown\or%
         blue\or%
         red\or%
         orange\or%
