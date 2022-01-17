@@ -1,4 +1,9 @@
-\ProvidesClass{friggeri-cv}[2012/04/30 CV class]
+%%%%%%%%%%
+% Tim Visée's CV theme.
+% Forked from Friggeri's CV theme.
+%%%%%%%%%%
+
+\ProvidesClass{cv-timvisee}[CV class]
 \NeedsTeXFormat{LaTeX2e}
 
 \DeclareOption{print}{\def\@cv@print{}}
@@ -75,17 +80,13 @@
 
 \newcommand{\header}[3]{%
   \begin{tikzpicture}[remember picture,overlay]
-    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=4cm] (box) at (current page.north){};
+    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=2cm] (box) at (current page.north){};
     \node [anchor=center] (name) at (box) {%
-      \fontsize{40pt}{72pt}\color{header}%
-      {\thinfont #1}{\bodyfont  #2}
-    };
-    \node [anchor=north] at (name.south) {%
-      \fontsize{14pt}{24pt}\color{header}%
-      \thinfont #3%
+      \fontsize{24pt}{24pt}\color{header}%
+      {\bodyfont #1}\thinfont{~~ \textperiodcentered{} ~~#2~~ \textperiodcentered{} ~~#3}
     };
   \end{tikzpicture}
-  \vspace{2.5cm}
+  \vspace{0.3cm}
   \vspace{-2\parskip}
 }
 
@@ -96,7 +97,7 @@
 \RequirePackage{parskip}
 
 \newcounter{colorCounter}
-\def\@sectioncolor#1#2#3{%
+\def\@sectioncolor#1{%
   {%
     \color{%
       \ifcase\value{colorCounter}%
@@ -113,18 +114,18 @@
         purple\or%
         brown\else%
         headercolor\fi%
-    } #1#2#3%
+    } #1%
   }%
   \stepcounter{colorCounter}%
 }
 
 \renewcommand{\section}[1]{
-  \par\vspace{\parskip}
+  \par\vspace{0.5\parskip}
   {%
-    \LARGE\headingfont\color{headercolor}%
+    \Large\headingfont\color{headercolor}%
     \@sectioncolor #1%
   }
-  \par\vspace{\parskip}
+  \par%\vspace{\parskip}
 }
 
 \renewcommand{\subsection}[1]{
@@ -158,7 +159,7 @@
     \textbf{#2}%
     \hfill%
     {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
-    #4\vspace{\parsep}%
+    #4\vspace{0.8\parsep}%
   }\\}
 
 
@@ -174,7 +175,7 @@
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
   }
-  \begin{textblock}{3.6}(1.5, 4.33)
+  \begin{textblock}{4.2}(0.7, 1.97)
   \begin{flushright}
   \obeycr
 }{%
@@ -322,15 +323,15 @@
 % Other tweaks %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[left=6.1cm,top=2cm,right=1.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
+\RequirePackage[left=5.6cm,top=2cm,right=1.0cm,bottom=1.0cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
 \hypersetup{
-    colorlinks=false,       
-    linkcolor=red,          
-    citecolor=red,        
-    filecolor=red,      
+    colorlinks=false,
+    linkcolor=red,
+    citecolor=red,
+    filecolor=red,
     urlcolor = red}
-    
+
 % A fix for \href{}{} colors not working with fontspec
 \makeatletter
 \def\HyColor@@@@UseColor#1\@nil{\addfontfeatures{Color=#1}}

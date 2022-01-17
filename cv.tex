@@ -1,15 +1,17 @@
-\documentclass[]{friggeri-cv}
+\documentclass[]{cv-timvisee}
 \usepackage{xcolor}
 \usepackage{multicol}
+\newfontfamily\DejaSans{DejaVu Sans}
+\usepackage{enumitem}
 
-% \addbibresource{bibliography.bib} % Specify the bibliography file to include publications
+\setlist[itemize]{leftmargin=5.5mm}
 
 \providecommand{\tightlist}{%
 \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
 \begin{document}
 
-\header{Tim}{Visée}{Software Engineer}
+\header{Tim Visée}{Software Engineer}{@timvisee}
 
 %----------------------------------------------------------------------------------------
 %	SIDEBAR SECTION
@@ -33,16 +35,22 @@ The Netherlands
 \section{Languages}
 Dutch, English
 \section{Real languages}
-% {\color{red} $\varheartsuit$} Rust
 Rust, C, C++
-Java, C\#
 PHP, HTML, JavaScript
-Bash
-Python, Go
-\section{Technologies}
-Linux, Docker
-Git, Vim
-\LaTeX{}
+Java, Kotlin, C\#
+Python, GDScript, Go
+bash, fish
+\section{{\DejaSans ❤️} Technologies}
+Linux, Docker, CI/CD
+Git, Vim, CLI, \LaTeX{}
+\section{Experience}
+Scrum, Kanban
+Android, Windows, macOS
+SQL, NoSQL
+MongoDB, Redis
+\section{Training}
+Communicative (2017)
+Presentation (2015)
 ~
 \textit{\href{https://github.com/timvisee/cv}{</>}}
 \end{aside}
@@ -52,19 +60,21 @@ Git, Vim
 %----------------------------------------------------------------------------------------
 
 \section{About}
-\begin{multicols}{2}
+
+{\setlength\multicolsep{3pt}%
+\begin{multicols}{3}
 \begin{itemize}
   \tightlist{}
-  \item Open-source \& free \\software enthusiast
+  \item Open source \& free \\software enthusiast
   \item Linux fanatic
   \item Rust evangelist
   \item Git master
   \item Vim wizard
 \end{itemize}
-\end{multicols}
+\end{multicols}}
 
 Self-educated software engineer started at 8 years old, always looking to expand
-my technical knowledge with challenging projects.\\
+my technical knowledge with challenging projects.
 Drive to built reliable, secure, robust \& high-performance software with the
 best technologies available to make the digital world a better place.
 Always searching for innovative solutions to develop software not just for
@@ -80,19 +90,19 @@ robots, but also for humans.
 
 \entry
 {2015 -- now}
-{HBO-ICT {\normalfont (current)}}
+{HBO-ICT}
 {The Hague University of Applied Sciences}
 {Specialization: Software Engineering}
 
 \entry
 {2014 -- 2015}
-{Computer Science {\normalfont (not finished)}}
+{Computer Science}
 {The Hague University of Applied Sciences}
-%{TODO some details...}
+{Specialization: Networking \textperiodcentered{} Security}
 
 \entry
 {2009 -- 2014}
-{HAVO {\normalfont (completed)}}
+{HAVO}
 {Christelijk College de Populier}
 {Dutch \textperiodcentered{} English \textperiodcentered{} Physics \textperiodcentered{} Mathematics B \textperiodcentered{} Chemistry \textperiodcentered{} NLT}
 
@@ -104,163 +114,45 @@ robots, but also for humans.
 
 \section{Experience}
 
-\subsection{Work}
-
 \begin{entrylist}
-
-%------------------------------------------------
-
-\entry
-{2020 -- now}
-{\href{https://technolution.eu/}{Technolution}}
-{Gouda, The Netherlands}
-{\emph{Software Engineer} \\
-Time: 40 hours / week}
-
-%------------------------------------------------
-
-\entry
-{2018 (21mth)}
-{\href{https://intermax.nl/}{Intermax Cloudsourcing}}
-{Rotterdam, The Netherlands}
-{\emph{Software Engineer} \\
-Time: 8 to 24 hours / week}
-
-%------------------------------------------------
-
-\entry
-{2017 (6mth)}
-{\href{https://intermax.nl/}{Intermax Cloudsourcing}}
-{Rotterdam, The Netherlands}
-{\emph{Internship Software Engineer} \\
-Time: 40 hours / week}
-
-%------------------------------------------------
-
-\entry
-{2015 (4mth)}
-{\href{https://hyperiontechnologies.nl/}{Hyperion Technologies}}
-{Delft, The Netherlands}
-{\emph{Software Engineer \& PCB Assembler} \\
-Time: 36 hours / week}
-
-%------------------------------------------------
-
-\entry
-{2014 (4mth)}
-{\href{https://systemat-ic.com/}{SystematIC Design}}
-{Delft, The Netherlands}
-{\emph{System Administrator} \\
-Time: 24 hours / week}
-
-%------------------------------------------------
-
-\end{entrylist}
-
-\subsection{Private}
-
-\begin{entrylist}
-
-%------------------------------------------------
 
 \entry
 {2006 -- now}
-{Freelancer, Self-employed}
+{Freelancer {\small\normalfont \small(36h/w)}}
 {The Hague, The Netherlands}
-{\emph{Freelancer, Software Engineer} \\
-Time: 24 hours / week}
+{Self-employed Software Engineer}
 
-%------------------------------------------------
+\entry
+{2020 -- 2021 ~\hfill \small(4m)}
+{\href{https://technolution.eu/}{Technolution} {\small\normalfont (40h/w)}}
+{Gouda, The Netherlands}
+{Software Engineer}
+
+\entry
+{2018 ~\hfill \small(21m)}
+{\href{https://intermax.nl/}{Intermax Cloudsourcing} {\small\normalfont (8-24h/w)}}
+{Rotterdam, The Netherlands}
+{Software Engineer}
+
+\entry
+{2017 ~\hfill \small(6m)}
+{\href{https://intermax.nl/}{Intermax Cloudsourcing} {\small\normalfont (40h/w)}}
+{Rotterdam, The Netherlands}
+{Internship Software Engineer}
+
+\entry
+{2015 ~\hfill \small(4m)}
+{\href{https://hyperiontechnologies.nl/}{Hyperion Technologies} {\small\normalfont (36h/w)}}
+{Delft, The Netherlands}
+{Software Engineer \& PCB Assembler}
+
+\entry
+{2014 ~\hfill \small(4m)}
+{\href{https://systemat-ic.com/}{SystematIC Design} {\small\normalfont (24h/w)}}
+{Delft, The Netherlands}
+{System Administrator}
 
 \end{entrylist}
-
-\ldots{}
-
-\newpage{}
-
-%----------------------------------------------------------------------------------------
-%	KNOWLEDGE SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Knowledge}
-
-Experience with application development with a broad selection of
-languages, including:
-
-\begin{multicols}{3}
-\begin{itemize}
-  \tightlist{}
-  \item Rust
-  \item Java
-  \item PHP
-  \item C
-  \item C++
-  \item C\#
-  \item Python
-  \item JavaScript
-\end{itemize}
-\end{multicols}
-
-Knowledge of operating systems such as:
-
-\begin{multicols}{3}
-\begin{itemize}
-  \tightlist{}
-  \item Linux
-  \item Microsoft Windows
-  \item macOS
-  \item Android
-\end{itemize}
-\end{multicols}
-
-Experience with containerization using Docker and related.
-
-Experience with databases systems and related such as:
-
-\begin{multicols}{3}
-\begin{itemize}
-  \tightlist{}
-  \item MySQL
-  \item PostgreSQL
-  \item MongoDB
-  \item SQLite
-  \item Redis
-\end{itemize}
-\end{multicols}
-
-Experience with Continuous Integration and Continuous Deployment.
-
-Knowledge of Scrum and Kanban techniques.
-
-%----------------------------------------------------------------------------------------
-%	INTERESTS SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Interests}
-
-Professional:
-\begin{multicols}{2}
-\begin{itemize}
-  \tightlist{}
-  \item Application development
-  \item Computer programming
-\end{itemize}
-\end{multicols}
-
-
-Personal:
-\begin{multicols}{2}
-\begin{itemize}
-  \tightlist{}
-  \item Graphics design, layouts/logos
-  \item Scouting, leader
-  \item Technical Do It Yourself projects
-\end{itemize}
-\end{multicols}
-
-\ldots{}
-
-\newpage{}
 
 %----------------------------------------------------------------------------------------
 %	PROJECTS SECTION
@@ -268,47 +160,58 @@ Personal:
 
 \section{Projects}
 
-These are some of the projects I work or have worked on:
+These are some notable public projects I work on:
 
 \begin{entrylist}
 
 \entry
 {2018 -- now}
-{\href{https://github.com/timvisee/ffsend}{ffsend}}
+{\href{https://github.com/timvisee/send}{Send}, \href{https://github.com/timvisee/ffsend}{ffsend}}
 {}
-{Easily and securely share files from the command line. A fully featured Firefox Send client.}
+{Simple \& private file sharing, from the browser and CLI. (Firefox Send fork)}
 
 \entry
 {2018 -- now}
 {\href{https://github.com/timvisee/barbapappa}{Barbapappa}}
 {}
-{Digital bar administration, transaction and payment platform.}
+{Web based bar administration, transaction, payment \& inventory platform.}
 
 \entry
-{2012 -- now}
-{Rumor}
+{2021 -- now}
+{\href{https://github.com/timvisee/prs}{prs}}
 {}
-{Decentralised open-source Instant Messaging alternative.}
+{Secure, fast \& convenient password manager CLI using GPG \& git.}
 
 \entry
-{2017 -- now}
-{Pokoebox}
+{2021}
+{\href{https://github.com/timvisee/merge-mania}{Merge Mania}}
 {}
-{Smart portable boombox which includes video streaming.}
+{Real-time team based merging/trading web game to play using your phone.}
 
-\entry
-{2017}
-{\href{https://github.com/timvisee/dworek}{dworek}}
-{}
-{Real-time location based web game. Players build factories to produce items,
-trade and capture premises.}
+% disabled: \entry
+% disabled: {2012 -- now}
+% disabled: {Rumor}
+% disabled: {}
+% disabled: {Decentralised open-source Instant Messaging alternative.}
 
-\entry
-{2017}
-{\href{https://github.com/timvisee/maris-game}{Maris game}}
-{}
-{Real-time location based web game. Players have to complete challenges.}
-% TODO: mention this is for Maris
+% disabled: \entry
+% disabled: {2017 -- now}
+% disabled: {Pokoebox}
+% disabled: {}
+% disabled: {Smart portable boombox which includes video streaming.}
+
+% disabled: \entry
+% disabled: {2017}
+% disabled: {\href{https://github.com/timvisee/dworek}{dworek}}
+% disabled: {}
+% disabled: {Real-time location based web game. Players build factories to produce items,
+% disabled: trade and capture premises.}
+
+% disabled: \entry
+% disabled: {2017}
+% disabled: {\href{https://github.com/timvisee/maris-game}{Maris game}}
+% disabled: {}
+% disabled: {Real-time location based web game. Players have to complete challenges.}
 
 \entry
 {2016}
@@ -316,82 +219,62 @@ trade and capture premises.}
 {}
 {A 3D engine from scratch using OpenGL.}
 
-\entry
-{2015}
-{Carbon CMS}
-{}
-{Content Management System for PHP websites.}
+% disabled: \entry
+% disabled: {2015}
+% disabled: {Carbon CMS}
+% disabled: {}
+% disabled: {Content Management System for PHP websites.}
 
 \end{entrylist}
 
-For a more complete view I recommend to check out my
+\emph{Please refer to my
+\href{https://timvisee.com/projects}{website} or
 \href{https://github.com/timvisee}{GitHub}
-profile.
+profile for a much broader view of my public projects.}
 
 %----------------------------------------------------------------------------------------
-%	DIPLOMAS SECTION
+%	INTERESTS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Diplomas}
+\section{Interests}
 
-\begin{entrylist}
+Besides my professional interests on this page, my personal interests \&
+activities include:
 
-%------------------------------------------------
-
-\entry
-{2014}
-{HAVO}
-{Christelijk College de Populier}
-% {Awarded after completing 5 years of college.}
-
-%------------------------------------------------
-
-\end{entrylist}
-
-%----------------------------------------------------------------------------------------
-%	COMMUNICATION SKILLS SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Communication skills}
-
-\begin{entrylist}
-
-%------------------------------------------------
-
-\entry
-{2017}
-{Communicative training}
-{Intermax Cloudsourcing}
-% {TODO Some description here}
-
-%------------------------------------------------
-
-\entry
-{2015}
-{Presentations}
-{The Hague University of Applied Sciences}
-% {TODO Some description here}
-
-%------------------------------------------------
-
-\end{entrylist}
-
-\ldots{}
-
-\newpage{}
+{\setlength\multicolsep{3pt}%
+\begin{multicols}{2}
+\begin{itemize}
+  \tightlist{}
+  \item Scouting: cubs leader
+  \item Technical \emph{Do It Yourself} projects
+  \item Graphics design: layouting, logos
+  \item Game design: level design, mechanics
+\end{itemize}
+\end{multicols}}
 
 %----------------------------------------------------------------------------------------
 % REFERENCE SECTION
 %----------------------------------------------------------------------------------------
+
+\newpage
 
 \section{References}
 
 \begin{entrylist}
 
 \entry
+{\href{https://technolution.com}{Technolution}}
+{E. Gribnau}
+{Burgemeester Jamessingel 1, 2803 WV Gouda}
+{\emph{Software Engineer} \\
+Site: \href{https://technolution.com}{https://technolution.com/} \\
+Mail: erwin.gribnau@technolution.nl \\
+Phone: +31 182 59 40 00}
+
+\entry
 {\href{https://intermax.nl}{Intermax}}
 {M. van Gorp}
-{Schouwburgplein 30, 3012 CL Rotterdam }
+{Schouwburgplein 30, 3012 CL Rotterdam}
 {\emph{Software Engineer} \\
 Site: \href{https://intermax.nl}{https://intermax.nl/} \\
 Mail: m.vangorp@intermax.nl \\
@@ -416,9 +299,5 @@ Mail: info@hyperiontechnologies.nl \\
 Phone: +31 15 5160905}
 
 \end{entrylist}
-
-% TODO: properly define favorite programming languages and technologies
-% TODO: text description of experiences/hobbies
-% TODO: resolve all other TODOs
 
 \end{document}
