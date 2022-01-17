@@ -1,16 +1,19 @@
-image: blang/latex:latest
+image: rust:latest
 
 # Compile LaTeX document, and release to GitLab pages
 pages:
   stage: deploy
   script:
-    # Upgrade system, install Ubuntu font
+    # Prepare system
+    - "sed -i 's/ main/ main contrib non-free/' /etc/apt/sources.list"
     - apt-get update -yqq
-    - apt-get install ttf-ubuntu-font-family -yqq
+    - apt-get install -yqq libfontconfig1-dev libgraphite2-dev libharfbuzz-dev libicu-dev zlib1g-dev ttf-ubuntu-font-family biber
+
+    # Install tectonic
+    - cargo install tectonic --force
 
     # Compile LaTeX document
-    - make
-    - make
+    - tectonic cv.tex
 
     # Release
     - mkdir public
@@ -18,5 +21,5 @@ pages:
   artifacts:
     paths:
       - public
-  only:
-    - master
+  #only:
+  #  - master
