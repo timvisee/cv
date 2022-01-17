@@ -86,7 +86,7 @@
       {\bodyfont #1}\thinfont{~~ \textperiodcentered{} ~~#2~~ \textperiodcentered{} ~~#3}
     };
   \end{tikzpicture}
-  \vspace{0.3cm}
+  \vspace{0.25cm}
   \vspace{-2\parskip}
 }
 
@@ -95,11 +95,13 @@
 % Structure %
 %%%%%%%%%%%%%
 \RequirePackage{parskip}
+\RequirePackage{soul}
 
 \newcounter{colorCounter}
 \def\@sectioncolor#1{%
   {%
-    \color{%
+    \setul{2pt}{2pt}
+    \setulcolor{%
       \ifcase\value{colorCounter}%
         blue\or%
         red\or%
@@ -114,7 +116,8 @@
         purple\or%
         brown\else%
         headercolor\fi%
-    } #1%
+    }%
+    \ul{#1}%
   }%
   \stepcounter{colorCounter}%
 }
@@ -123,7 +126,7 @@
   \par\vspace{0.5\parskip}
   {%
     \Large\headingfont\color{headercolor}%
-    \@sectioncolor #1%
+    \@sectioncolor{#1}%
   }
   \par%\vspace{\parskip}
 }
@@ -175,7 +178,7 @@
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
   }
-  \begin{textblock}{4.4}(0.5, 1.95)
+  \begin{textblock}{4.4}(0.5, 1.90)
   \begin{flushright}
   \obeycr
 }{%
