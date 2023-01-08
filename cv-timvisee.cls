@@ -123,7 +123,7 @@
 }
 
 \renewcommand{\section}[1]{
-  \par\vspace{0.5\parskip}
+  \par\vspace{0.2\parskip}
   {%
     \Large\headingfont\color{headercolor}%
     \@sectioncolor{#1}%
