@@ -1,19 +1,19 @@
-image: rust:latest
+image: ubuntu
 
 # Compile LaTeX document, and release to GitLab pages
 pages:
   stage: deploy
   script:
     # Prepare system
-    - "sed -i 's/ main/ main contrib non-free/' /etc/apt/sources.list"
-    - apt-get update -yqq
-    - apt-get install -yqq libfontconfig1-dev libgraphite2-dev libharfbuzz-dev libicu-dev zlib1g-dev ttf-ubuntu-font-family biber
+    - apt-get update
+    - apt-get install -yq wget tar biber fonts-ubuntu
 
     # Install tectonic
-    - cargo install tectonic --force
+    - wget "https://github.com/tectonic-typesetting/tectonic/releases/download/tectonic%400.12.0/tectonic-0.12.0-x86_64-unknown-linux-musl.tar.gz" -O tectonic.tar.gz
+    - tar -xzvf tectonic.tar.gz
 
     # Compile LaTeX document
-    - tectonic cv.tex
+    - ./tectonic cv.tex
 
     # Release
     - mkdir public
